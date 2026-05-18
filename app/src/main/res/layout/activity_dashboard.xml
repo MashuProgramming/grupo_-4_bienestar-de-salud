@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar SIEMPRE arriba -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/acento"
+        app:title="Dashboard"
+        app:titleTextColor="@color/blanco"/>
+
+    <!-- DrawerLayout para el drawer y contenido -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Contenido principal -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fondo">
+
+            <ImageView
+                android:id="@+id/imgDoctor"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="¡Bienvenido, Dr. Arce!"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/blanco"
+                app:layout_constraintTop_toBottomOf="@id/imgDoctor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tvAbout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="¿Quiénes somos?\nSomos un equipo dedicado a la gestión médica integral.\n\n¿Qué hacemos?\nFacilitamos el manejo de medicamentos, citas, recordatorios y pacientes."
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/texto_input"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.92"/>
+
+            <FrameLayout
+                android:id="@+id/chartContainer"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/fondo_claro"
+                app:layout_constraintTop_toBottomOf="@id/tvAbout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.95"/>
+
+            <TextView
+                android:id="@+id/tvChartLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aquí se mostrarán tus gráficas"
+                android:textColor="@color/text_secondary"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/chartContainer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Sidebar / Navigation Drawer -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/fondo_claro"
+            app:itemIconTint="@color/acento"
+            app:itemTextColor="@color/blanco"
+            app:menu="@menu/menu_dashboard_drawer"
+            app:headerLayout="@layout/drawer_header"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

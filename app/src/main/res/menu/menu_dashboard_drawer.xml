@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_medicamentos"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Medicamentos" />
+    <item
+        android:id="@+id/nav_citas"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Citas" />
+    <item
+        android:id="@+id/nav_recordatorios"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Recordatorios" />
+    <item
+        android:id="@+id/nav_pacientes"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Pacientes" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Cerrar sesión"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:orderInCategory="100"
+        android:checkable="false"
+        android:enabled="true"
+        android:visible="true"
+        android:showAsAction="never"/>
+</menu>

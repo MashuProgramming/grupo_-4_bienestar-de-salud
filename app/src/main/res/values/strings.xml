@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">proyecto_final</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="welcome_back_text">Bienvenido de nuevo</string>
+    <string name="logo_desc">Logo de la aplicación Bienestar y Salud</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="register_text">¿No tienes cuenta? Regístrate</string>
+    <string name="text_login_prompt">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="hint_confirm_email">Confirmar correo electrónico</string>
+    <string name="hint_name">Nombre completo</string>
+    <string name="hint_age">Edad</string>
+    <string name="hint_conditions">Patologías</string>
+    <string name="patients_title">Perfiles de Paciente</string>
+    <string name="hint_apellido">Apellido</string>
+    <string name="hint_sexo">Sexo</string>
+    <string name="hint_patologias">Patologías</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="hint_direccion">Dirección</string>
+    <string name="btn_add_patient">Agregar Paciente</string>
+    <string name="register_title">Crear Cuenta</string>
+
+
+    <string name="hint_email">Correo Electrónico</string>
+    <string name="hint_nombre">Nombre Completo</string>
+    <string name="hint_fecha_nacimiento">Fecha de Nacimiento (YYYY-MM-DD)</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_last_name">Apellido</string>
+    <string name="hint_birthdate">Fecha de nacimiento</string>
+    <string name="hint_sex">Sexo</string>
+    <string name="hint_phone">Teléfono</string>
+    <string name="hint_address">Dirección</string>
+    <string name="btn_register">Registrar</string>
+    <string name="logo_description">logo</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+</resources>

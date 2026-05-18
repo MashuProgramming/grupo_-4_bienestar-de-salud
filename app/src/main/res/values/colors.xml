@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="fondo">#1E1E2F</color>
+    <color name="fondo_claro">#2D2D44</color>
+    <color name="acento">#5C9DBF</color>
+    <color name="blanco">#FFFFFFFF</color>
+    <color name="acento1">#FF4081</color>
+    <color name="bottom_nav_icon_tint">#FF5C9DBF</color>
+    <color name="bottom_nav_text_tint">#FF5C9DBF</color>
+    <color name="primary_blue">#2196F3</color>
+    <color name="text_secondary">#666666</color>
+    <color name="fondo_input">#3C3C55</color>
+    <color name="borde_input">#82B1FF</color>
+    <color name="texto_input">#E0E0E0</color>
+    <color name="texto_input1">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <!-- ahora es un gris azulado con 70% de opacidad -->
+    <solid android:color="#B33C3C55"/>
+    <stroke
+        android:width="2dp"
+        android:color="@color/borde_input" />
+    <corners android:radius="8dp" />
+</shape>
